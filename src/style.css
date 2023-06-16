@@ -1,0 +1,184 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./../assets/imgs/bg3.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  /* background-size: contain; */
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 40px;
+}
+
+.top-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left */
+#left-weather-text {
+  font-size: 50px;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+#left-city-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+#left-date,
+#left-time {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#left-current-temp {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 15px 0 5px 0;
+}
+
+#left-change-units {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 12px;
+}
+
+.left-search {
+  border-bottom: 2px solid white;
+  padding: 5px;
+  width: 155px;
+}
+
+#left-city-search {
+  font-size: 15px;
+  color: white;
+  background: none;
+  border: none;
+  width: 125px;
+  padding-right: 3px;
+  outline: none;
+}
+
+#left-city-search::placeholder {
+  color: white;
+}
+
+.left-weather-icon {
+  filter: invert(100%);
+  width: 165px;
+}
+
+/* Right */
+.right-sub svg {
+  width: 50px;
+  height: 50px;
+  stroke-width: 1px;
+  filter: invert(100%);
+}
+.right-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.right-sub p {
+  margin: 6px;
+}
+
+.right-desc-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.right-desc-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Bottom */
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-title {
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.forecast-temp {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.forecast-max-temp {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.forecast-max-temp p {
+  margin: 5px 0;
+}
+
+.forecast-max-temp svg {
+  filter: invert(100%);
+  width: 20px;
+}
+
+.forecast-weatherIcon {
+  filter: invert(100%);
+  padding: 30px 0;
+  width: 130px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  color: white;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  color: #ffffff;
+}
+
+.text {
+  margin-top: 10px;
+}
